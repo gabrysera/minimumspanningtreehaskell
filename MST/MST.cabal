@@ -18,7 +18,7 @@ extra-source-files:  CHANGELOG.md
 
 executable MST
   main-is:             Main.hs
-  other-modules:       DataStructures.graph
+  other-modules:       DataStructures.Graph
   -- other-extensions:
   build-depends:       base >=4.13 && <4.14
   -- hs-source-dirs:

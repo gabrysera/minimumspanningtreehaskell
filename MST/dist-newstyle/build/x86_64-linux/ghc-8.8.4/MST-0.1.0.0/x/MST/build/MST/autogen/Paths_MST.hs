@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/home/marco/.cabal/bin"
-libdir     = "/home/marco/.cabal/lib/x86_64-linux-ghc-8.8.4/MST-0.1.0.0-inplace-MST"
-dynlibdir  = "/home/marco/.cabal/lib/x86_64-linux-ghc-8.8.4"
-datadir    = "/home/marco/.cabal/share/x86_64-linux-ghc-8.8.4/MST-0.1.0.0"
-libexecdir = "/home/marco/.cabal/libexec/x86_64-linux-ghc-8.8.4/MST-0.1.0.0"
-sysconfdir = "/home/marco/.cabal/etc"
+bindir     = "/home/gabriele/.cabal/bin"
+libdir     = "/home/gabriele/.cabal/lib/x86_64-linux-ghc-8.8.4/MST-0.1.0.0-inplace-MST"
+dynlibdir  = "/home/gabriele/.cabal/lib/x86_64-linux-ghc-8.8.4"
+datadir    = "/home/gabriele/.cabal/share/x86_64-linux-ghc-8.8.4/MST-0.1.0.0"
+libexecdir = "/home/gabriele/.cabal/libexec/x86_64-linux-ghc-8.8.4/MST-0.1.0.0"
+sysconfdir = "/home/gabriele/.cabal/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "MST_bindir") (\_ -> return bindir)
