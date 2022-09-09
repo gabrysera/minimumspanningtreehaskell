@@ -1,4 +1,4 @@
-module Graph(Node, Graph) where
+module DataStructures.Graph(Node, Graph) where
 
 data Node = {
     label :: String,
