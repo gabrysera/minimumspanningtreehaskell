@@ -1,3 +1,5 @@
+module Graph(Node, Graph) where
+
 type Label = String
 
 data Node = Node {
@@ -5,4 +7,4 @@ data Node = Node {
     neighbours :: [Node]
 }
 
-data Graph a = Graph [Node]
+data Graph = Graph [Node]
